@@ -14,7 +14,6 @@ Seguir a estrutura abaixo para inclusão dos dados:
         <td>Este site estático utiliza o <a href="https://gohugo.io/" target="_blank">Framework Hugo</a> com o <a href="https://hugoblox.com/templates/details/academic-cv/" target="_blank">tema provido pela HugoBlox</a> e esta hospedado no GitHub Pages</td>
         <td><a href="https://www.linkedin.com/in/lgrando123" target="_blank">Linkedin</a></td>
         <td><a href="https://github.com/proflgrando" target="_blank">Github</a></td>
-        <td><a href="https://github.com/Matheushsp" target="_blank">Github</a></td>
     </tr>
    ~~~
 
