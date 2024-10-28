@@ -3,45 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio dos Alunos</title>
+    <title>Portfólio dos Alunos</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-<h1>Disciplina de Programação WEB</h1>
-<table>
-    <tr>
-        <th>Nome</th>
-        <th>Link</th>
-        <th>Breve Descrição da Tecnologia</th>
-        <th>Rede Social </th> 
-        <th>Link GitHub</th>
-    </tr>
-    <tr>
-        <td>Leonardo Grando</td>
-        <td><a href="https://lgrando1.github.io" target="_blank">Página Leonardo Grando</a></td>
-        <td>Este site estático utiliza o <a href="https://gohugo.io/" target="_blank">Framework Hugo</a> com o <a href="https://hugoblox.com/templates/details/academic-cv/" target="_blank">tema provido pela HugoBlox</a> e esta hospedado no GitHub Pages</td>
-        <td><a href="https://www.linkedin.com/in/lgrando123" target="_blank">Linkedin</a></td>
-        <td><a href="https://github.com/proflgrando" target="_blank">Github</a></td>
-    </tr>
+<header>
+    <h1>Disciplina de Programação WEB</h1>
+    <div class="buttons">
+        <button id="toggle-theme">🌙 Modo Escuro</button>
+        <button id="accessibility-btn">Acessibilidade</button>
+    </div>
+</header>
 
-    <tr>
-        <td>Matheus Henrique </td>
-        <td><a href="https://matheushsp.github.io/portifolio/" target="_blank">portifolio</a></td>
-        <td>Este site utiliza o Framework html e esta hospedado no GitHub Pages</td>
-        <td><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">Linkedin</a></td>
-        <td><a href="https://github.com/Matheushsp" target="_blank">Github</a></td>
-    </tr>
-    
-    <tr>
-    <td>Lucas Lima</td>
-    <td><a href="https://lucas-lima.vercel.app/" target="_blank">Meu Portfólio</a></td>
-    <td>Este site utiliza HTML, CSS, JavaScript, TypeScript, React e está hospedado no Vercel</td>
-    <td><a href="https://www.linkedin.com/in/lucsp-lima" target="_blank">Linkedin</a></td>
-    <td><a href="https://github.com/opZywl" target="_blank">GitHub</a></td>
-</tr>
-    <!-- Adicione mais links conforme necessário -->
-</table>
+<main>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Link</th>
+                <th>Breve Descrição da Tecnologia</th>
+                <th>Rede Social</th> 
+                <th>Link GitHub</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Leonardo Grando</td>
+                <td><a href="https://lgrando1.github.io" target="_blank">Página Leonardo Grando</a></td>
+                <td>Site estático com <a href="https://gohugo.io/" target="_blank">Hugo Framework</a> e <a href="https://hugoblox.com/templates/details/academic-cv/" target="_blank">tema HugoBlox</a>, hospedado no GitHub Pages</td>
+                <td><a href="https://www.linkedin.com/in/lgrando123" target="_blank">LinkedIn</a></td>
+                <td><a href="https://github.com/proflgrando" target="_blank">GitHub</a></td>
+            </tr>
+            <tr>
+                <td>Matheus Henrique</td>
+                <td><a href="https://matheushsp.github.io/portifolio/" target="_blank">Portfólio</a></td>
+                <td>Site com HTML, hospedado no GitHub Pages</td>
+                <td><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn</a></td>
+                <td><a href="https://github.com/Matheushsp" target="_blank">GitHub</a></td>
+            </tr>
+            <tr>
+                <td>Lucas Lima</td>
+                <td><a href="https://lucas-lima.vercel.app/" target="_blank">Meu Portfólio</a></td>
+                <td>Site com HTML, CSS, JavaScript, TypeScript, React, hospedado no Vercel</td>
+                <td><a href="https://www.linkedin.com/in/lucsp-lima" target="_blank">LinkedIn</a></td>
+                <td><a href="https://github.com/opZywl" target="_blank">GitHub</a></td>
+            </tr>
+            <!-- Adicione mais links conforme necessário -->
+
+        </tbody>
+    </table>
+</main>
 
 </body>
 </html>
