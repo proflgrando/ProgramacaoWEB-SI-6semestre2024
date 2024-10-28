@@ -7,18 +7,34 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="dark-mode">
 
 <header>
-    <h1>Disciplina de Programação WEB</h1>
+    <h1 id="page-title">Disciplina de Programação WEB</h1>
     <div class="buttons">
-        <button id="toggle-theme">🌙 Modo Escuro</button>
+        <button id="toggle-theme">☀️ Modo Claro</button>
         <button id="accessibility-btn">Acessibilidade</button>
+        <button id="toggle-width">🔄 Tela Completa</button>
     </div>
 </header>
 
+<div id="data-counter" class="center">Registros preenchidos: 0</div>
+
+<div id="accessibility-menu" class="hidden">
+    <p><strong>Fonte:</strong></p>
+    <button id="increase-font">A+ Aumentar</button>
+    <button id="decrease-font">A- Diminuir</button>
+    <hr>
+    <p><strong>Título:</strong></p>
+    <button id="align-left">Esquerda</button>
+    <button id="align-center">Centro</button>
+    <button id="align-right">Direita</button>
+    <hr>
+    <button id="reset-font">🔄 Reset Configurações</button>
+</div>
+
 <main>
-    <table>
+    <table id="main-table" class="normal-width">
         <thead>
             <tr>
                 <th>Nome</th>
@@ -50,8 +66,6 @@
                 <td><a href="https://www.linkedin.com/in/lucsp-lima" target="_blank">LinkedIn</a></td>
                 <td><a href="https://github.com/opZywl" target="_blank">GitHub</a></td>
             </tr>
-            <!-- Adicione mais links conforme necessário -->
-
         </tbody>
     </table>
 </main>
