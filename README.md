@@ -1,9 +1,19 @@
-
 # 🧑‍💻 Portfólios de Desenvolvedores
 
 Este repositório centraliza portfólios de desenvolvedores, exibindo seus projetos, tecnologias utilizadas, redes sociais e repositórios no GitHub. Ele serve para ajudar outros desenvolvedores a se conectarem e se inspirarem.
 
 ---
+
+### 🔍 Verificar a Aprovação do Envio
+
+Após enviar seu pull request, acompanhe as notificações para ver quando ele for aprovado pelo professor. 
+
+Para confirmar que o envio foi concluído:
+- Verifique se seu nome e link do portfólio aparecem no site depois que o professor aceitar o pull request.
+- Atualize a página do portfólio regularmente para visualizar a atualização.
+
+# Visualizar Website
+- [Portfólio aqui](https://proflgrando.github.io/ProgramacaoWEB-SI-6semestre2024/)
 
 ## 📄 Estrutura dos Dados do Portfólio
 
