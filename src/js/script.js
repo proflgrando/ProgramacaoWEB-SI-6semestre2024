@@ -82,7 +82,7 @@ toggleWidthButton.addEventListener('click', () => {
 
 // Data counter
 const dataCounter = document.getElementById('data-counter');
-const valorInicial = 37; // Valor inicial para subtração
+const valorInicial = 38; // Valor inicial para subtração
 
 const updateDataCounter = () => {
     const rows = document.querySelectorAll('tbody tr');
@@ -94,7 +94,7 @@ const updateDataCounter = () => {
 
 // Atualiza o contador e gera o gráfico
 const rowCount = updateDataCounter();
-const valorRestante = valorInicial - rowCount +1;
+const valorRestante = valorInicial - rowCount;
 
 // Configuração do gráfico donut
 const ctx = document.getElementById('myChart').getContext('2d');
@@ -104,7 +104,7 @@ const myChart = new Chart(ctx, {
         labels: ['Em andamemto', 'Preenchido'], // Rótulos do gráfico
         datasets: [{
             label: 'Número de Registros',
-            data: [valorRestante, rowCount-1], // Usa o valor restante e o número de registros
+            data: [valorRestante, rowCount], // Usa o valor restante e o número de registros
             backgroundColor: [
                 'rgba(0, 0, 255, 0.4)', // Cor do restante
                 'rgba(75, 192, 192, 0.2)'  // Cor dos preenchidos
