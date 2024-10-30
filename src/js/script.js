@@ -94,17 +94,17 @@ const updateDataCounter = () => {
 
 // Atualiza o contador e gera o gráfico
 const rowCount = updateDataCounter();
-const valorRestante = valorInicial - rowCount;
+const valorRestante = valorInicial - rowCount-1;
 
 // Configuração do gráfico donut
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'doughnut', // Tipo de gráfico
     data: {
-        labels: ['Restante', 'Preenchido'], // Rótulos do gráfico
+        labels: ['Em andamemto', 'Preenchido'], // Rótulos do gráfico
         datasets: [{
             label: 'Número de Registros',
-            data: [valorRestante, rowCount], // Usa o valor restante e o número de registros
+            data: [valorRestante, rowCount-1], // Usa o valor restante e o número de registros
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)', // Cor do restante
                 'rgba(75, 192, 192, 0.2)'  // Cor dos preenchidos
@@ -124,7 +124,7 @@ const myChart = new Chart(ctx, {
             },
             title: {
                 display: true,
-                text: 'Projetos entregues vs não entregues'
+                text: 'Evolução dos projetos entregues'
             }
         }
     }
