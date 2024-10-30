@@ -94,7 +94,7 @@ const updateDataCounter = () => {
 
 // Atualiza o contador e gera o gráfico
 const rowCount = updateDataCounter();
-const valorRestante = valorInicial - rowCount-1;
+const valorRestante = valorInicial - rowCount +1;
 
 // Configuração do gráfico donut
 const ctx = document.getElementById('myChart').getContext('2d');
