@@ -82,8 +82,50 @@ toggleWidthButton.addEventListener('click', () => {
 
 // Data counter
 const dataCounter = document.getElementById('data-counter');
+const valorInicial = 37; // Valor inicial para subtração
+
 const updateDataCounter = () => {
     const rows = document.querySelectorAll('tbody tr');
-    dataCounter.textContent = `Registros preenchidos: ${rows.length}`;
+    const rowCount = rows.length;
+    dataCounter.textContent = `Registros preenchidos: ${rowCount}`;
+    return rowCount; // Retorna o número de linhas
 };
-updateDataCounter();
+
+
+// Atualiza o contador e gera o gráfico
+const rowCount = updateDataCounter();
+const valorRestante = valorInicial - rowCount;
+
+// Configuração do gráfico donut
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'doughnut', // Tipo de gráfico
+    data: {
+        labels: ['Restante', 'Preenchido'], // Rótulos do gráfico
+        datasets: [{
+            label: 'Número de Registros',
+            data: [valorRestante, rowCount], // Usa o valor restante e o número de registros
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)', // Cor do restante
+                'rgba(75, 192, 192, 0.2)'  // Cor dos preenchidos
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Projetos entregues vs não entregues'
+            }
+        }
+    }
+});
