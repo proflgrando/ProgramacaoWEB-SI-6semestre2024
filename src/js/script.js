@@ -106,11 +106,11 @@ const myChart = new Chart(ctx, {
             label: 'Número de Registros',
             data: [valorRestante, rowCount-1], // Usa o valor restante e o número de registros
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)', // Cor do restante
+                'rgba(45, 115, 178, 0.2)', // Cor do restante
                 'rgba(75, 192, 192, 0.2)'  // Cor dos preenchidos
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
+                'rgba(45, 115, 178, 1)',
                 'rgba(75, 192, 192, 1)'
             ],
             borderWidth: 1
