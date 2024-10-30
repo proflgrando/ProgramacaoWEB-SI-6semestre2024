@@ -82,7 +82,7 @@ toggleWidthButton.addEventListener('click', () => {
 
 // Data counter
 const dataCounter = document.getElementById('data-counter');
-const valorInicial = 38; // Valor inicial para subtração
+const valorInicial = 37; // Valor inicial para subtração
 
 const updateDataCounter = () => {
     const rows = document.querySelectorAll('tbody tr');
