@@ -23,7 +23,6 @@ Cada desenvolvedor é representado em uma linha da tabela com as seguintes colun
 - **Descrição da Tecnologia**: Breve descrição das tecnologias usadas no portfólio.
 - **Rede Social**: Link para o perfil social do desenvolvedor.
 - **GitHub**: Link para o perfil GitHub.
-- **LinkedIn**: Link para o perfil GitHub.
 
 Aqui está um exemplo da estrutura de dados, que também pode ser encontrada no README:
 
