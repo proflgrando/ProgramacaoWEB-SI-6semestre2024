@@ -23,9 +23,10 @@ body {
     border: 1px solid #555;
 }
 
-.dark-mode thead th {
+.dark-mode thead tr {
     background-color: #4CAF50;
     color: white;
+    text-align: center;
 }
 
 /* Tema Claro */
@@ -38,9 +39,10 @@ body {
     color: #4CAF50;
 }
 
-.light-mode thead th {
+.light-mode thead tr {
     background-color: #4CAF50;
     color: white;
+    text-align: center;
 }
 
 .light-mode #accessibility-menu {
