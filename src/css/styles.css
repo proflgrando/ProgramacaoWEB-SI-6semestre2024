@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 /* Tema Escuro (Padrão) */
@@ -14,7 +15,7 @@ body {
 }
 
 .dark-mode a {
-    color: #80ffaa;
+    color: #bdbea7;
 }
 
 .dark-mode #accessibility-menu {
@@ -24,9 +25,10 @@ body {
 }
 
 .dark-mode thead tr {
-    background-color: #4CAF50;
+    background-color: #1017e9;
     color: white;
     text-align: center;
+    border: 1px solid #fbf8f8;
 }
 
 /* Tema Claro */
@@ -36,7 +38,7 @@ body {
 }
 
 .light-mode a {
-    color: #4CAF50;
+    color: #1017e9;
 }
 
 .light-mode thead tr {
@@ -165,6 +167,7 @@ tbody td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: left;
+    
 }
 
 @media (max-width: 768px) {
